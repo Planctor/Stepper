@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: #f0f2f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Nunito sans-serif;
+}
+
+.step-bar{
+    width: 900px;
+    margin-bottom: 40px;
+}
+
+#step-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.20);
+    border-radius: 20px;
+    width: 360px;
+    height: 440px;
+    padding: 30px 50px;
+}
+
+#step-content h1{
+    color: #52658F;
+    font-size: 28px;
+    font-family: Nunito;
+    font-weight: 400;
+}
+
+#step-content .conteudo-1{
+    display: none;
+}
+
+#step-content .conteudo-1 .botao input, 
+#step-content .conteudo-1 .botao button{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    background: #0099ff;
+    border-radius: 5px;
+}
+
+#step-content .conteudo-1 .botao button[disabled]{
+    background-color: #f8faff;
+    color: #b6b4b4;
+    cursor: no-drop;
+}
+
+#step-content .conteudo-1 .botao input + input,
+#step-content .conteudo-1 .botao button + button{
+    margin-top: 25px;
+}
+
+#step-content .conteudo-1 h3,
+#step-content .conteudo-2 h3,
+#step-content .conteudo-3 h3,
+#step-content .conteudo-4 h3,
+#step-content .conteudo-5 h3
+{
+    font-family: Nunito;
+    font-weight: 300;
+    color: #4A4A4A;
+    font-size: 24px;
+}
+
+#step-content .conteudo-5 h3{
+    transform: translate3d(0,20px,0);
+}
+
+#step-content .conteudo-2 select option,
+#step-content .conteudo-3 select option,
+#step-content .conteudo-5 select option{
+    background-color: #FFFFFF;
+    color:#0099ff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+#step-content .conteudo-2 select,
+#step-content .conteudo-3 select,
+#step-content .conteudo-5 select{
+    cursor: pointer;
+    display: block;
+    background: #0099ff;
+    color: #ebebeb;
+    font-weight: 400;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding: 5px 5px;
+    border: 3px solid #0099ff;
+}
+
+#step-content .conteudo-5 form{
+    display: flex;
+    flex-direction: column;
+}
+
+#step-content .conteudo-5 form input{
+    margin-top: 10px;
+}
+
+#step-content .conteudo-5 form p{
+    font-family: Nunito;
+    font-weight: 400;
+    color: #52658F;
+    font-size: 14px;
+}
+
+#step-content .conteudo-5 form input[type="submit"]{
+    display: block;
+    background: #0AD1B3;
+    color: #ebebeb;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px 5px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+#step-content .conteudo-3 select,
+#step-content .conteudo-5{
+    transform: translate3d(0,-50px,0);
+}
+
+#step-content .conteudo-4 input[type="text"]{
+    display: block;
+    background: #0099ff;
+    color: #ebebeb;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#step-content .conteudo-4 input::placeholder{
+    color: #ebebeb;
+}
+
+#step-content .conteudo-2 .txt{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#step-content .conteudo-2 .txt p{
+    font-family: Nunito;
+    font-weight: 400;
+    color: #52658F;
+    font-size: 18px;
+    transform: translate3d(0, -30px, 0)
+}
+
+#step-content #btn{
+    width: 100%;
+    display: flex;
+    align-self: end;
+    justify-content: space-between;
+}
+
+#step-content #btn .btn{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+#step-content #btn .btn:nth-child(1){
+    background-color: #FF5959;
+}
+
+#step-content #btn .btn:last-child{
+    background-color: #009DFF;
+}
+
+#step-content .conteudo-2,
+#step-content .conteudo-3,
+#step-content .conteudo-4,
+#step-content .conteudo-5,
+#step-content .conteudo-6
+{
+    display: none;
+}
+
+#step-content .conteudo-1.ativo,
+#step-content .conteudo-2.ativo,
+#step-content .conteudo-3.ativo,
+#step-content .conteudo-4.ativo,
+#step-content .conteudo-5.ativo,
+#step-content .conteudo-6.ativo
+{
+    display: block;
+}
+
+/* tablet */
+@media only screen and (max-width: 955px) {
+    .step-bar{
+        width: 700px;
+        margin-bottom: 30px;
+    }
+}
+
+/* celular */
+@media only screen and (max-width: 580px) {
+    body{
+        height: auto;
+    }
+
+    .step-bar{
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    #step-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
